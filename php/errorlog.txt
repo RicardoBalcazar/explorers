@@ -1,0 +1,2347 @@
+[2025-03-13 06:57:39] === INICIO DE EJECUCIÓN ===
+[2025-03-13 06:57:39] 🔍 ID Reserva recibido: 192
+[2025-03-13 06:57:39] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 192
+    [codigo_reserva] => EXPLO-00088
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-16
+    [check_out] => 2025-03-18
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+)
+
+[2025-03-13 06:57:39] ✅ Reserva encontrada en BD.
+[2025-03-13 06:57:39] ✅ Reserva actualizada correctamente.
+[2025-03-13 06:57:39] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 06:57:39] ✅ Transacción confirmada con éxito.
+[2025-03-13 06:58:36] === INICIO DE EJECUCIÓN ===
+[2025-03-13 06:58:36] 🔍 ID Reserva recibido: 193
+[2025-03-13 06:58:36] ❌ ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_tarifa' in 'field list'
+[2025-03-13 07:00:06] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:00:06] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:00:06] ❌ ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_tarifa' in 'field list'
+[2025-03-13 07:02:29] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:02:29] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:02:29] ❌ ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_tarifa' in 'field list'
+[2025-03-13 07:03:50] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:03:50] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:03:50] ❌ ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_tarifa' in 'field list'
+[2025-03-13 07:04:40] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:04:40] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:04:40] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Bloqueo
+    [id_cliente] => 23
+    [id_experiencia] => 1
+    [check_in] => 2025-03-17
+    [check_out] => 2025-03-19
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+            [nuevo_1] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:04:40] ✅ Reserva encontrada en BD.
+[2025-03-13 07:04:40] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:04:40] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:04:41] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:04:48] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:04:48] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:04:48] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 23
+    [id_experiencia] => 1
+    [check_in] => 2025-03-17
+    [check_out] => 2025-03-19
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+            [nuevo_1] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:04:48] ✅ Reserva encontrada en BD.
+[2025-03-13 07:04:48] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:04:48] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:04:48] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:04:53] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:04:53] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:04:53] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-17
+    [check_out] => 2025-03-19
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+            [nuevo_1] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:04:53] ✅ Reserva encontrada en BD.
+[2025-03-13 07:04:53] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:04:53] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:04:53] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:05:01] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:05:01] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:05:01] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 25
+    [id_experiencia] => 1
+    [check_in] => 2025-03-17
+    [check_out] => 2025-03-19
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+            [nuevo_1] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:05:01] ✅ Reserva encontrada en BD.
+[2025-03-13 07:05:01] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:05:01] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:05:01] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:05:09] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:05:09] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:05:09] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 1
+    [check_in] => 2025-03-17
+    [check_out] => 2025-03-19
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+            [nuevo_1] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:05:09] ✅ Reserva encontrada en BD.
+[2025-03-13 07:05:09] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:05:09] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:05:09] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:05:43] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:05:43] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:05:43] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-17
+    [check_out] => 2025-03-20
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+            [nuevo_1] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:05:43] ✅ Reserva encontrada en BD.
+[2025-03-13 07:05:43] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:05:43] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:05:43] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:05:50] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:05:51] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:05:51] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+            [nuevo_1] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:05:51] ✅ Reserva encontrada en BD.
+[2025-03-13 07:05:51] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:05:51] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:05:51] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:05:58] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:05:58] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:05:58] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 5
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+            [nuevo_1] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:05:58] ✅ Reserva encontrada en BD.
+[2025-03-13 07:05:58] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:05:58] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:05:58] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:06:31] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:06:31] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:06:31] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+            [nuevo_1] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:06:31] ✅ Reserva encontrada en BD.
+[2025-03-13 07:06:31] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:06:31] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:06:31] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:07:43] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:07:43] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:07:43] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+            [nuevo_1] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:07:43] ✅ Reserva encontrada en BD.
+[2025-03-13 07:07:43] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:07:43] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:07:43] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:13:21] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:13:21] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:13:21] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => 
+                    [apellidos] => 
+                    [pasaporte] => 
+                    [fecha_nacimiento] => 
+                    [id_pais] => 
+                    [genero] => 
+                    [alimentacion] => 
+                    [numero_vuelo] => 
+                    [fecha_hora_llegada] => 
+                    [fecha_hora_salida] => 
+                    [informacion_adicional] => 
+                )
+
+        )
+
+)
+
+[2025-03-13 07:13:21] ✅ Reserva encontrada en BD.
+[2025-03-13 07:13:21] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:13:21] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:13:21] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:16:12] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:16:12] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:16:12] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => pierodas
+                    [apellidos] => balcazardasda
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-14
+                    [id_pais] => 139
+                    [genero] => Femenino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-14T00:47
+                    [fecha_hora_salida] => 2025-03-14T00:47
+                    [informacion_adicional] => dada
+                )
+
+        )
+
+)
+
+[2025-03-13 07:16:12] ✅ Reserva encontrada en BD.
+[2025-03-13 07:16:12] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:16:12] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:16:12] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:16:12] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:16:59] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:16:59] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:16:59] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => pierodas
+                    [apellidos] => balcazardasda
+                    [pasaporte] => 2321332modificado
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 133
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321modificado
+                    [fecha_hora_llegada] => 2025-03-20T00:47
+                    [fecha_hora_salida] => 2025-03-20T00:47
+                    [informacion_adicional] => dadamodifcado
+                )
+
+        )
+
+)
+
+[2025-03-13 07:16:59] ✅ Reserva encontrada en BD.
+[2025-03-13 07:16:59] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:16:59] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:16:59] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:16:59] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:20:23] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:20:23] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:20:23] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => Ricardo
+                    [apellidos] => BALCAZAR
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 133
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321modificado
+                    [fecha_hora_llegada] => 2025-03-20T00:47
+                    [fecha_hora_salida] => 2025-03-20T00:47
+                    [informacion_adicional] => dadamodifcado
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => MODIFICADO
+                            [precio] => 300.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:20:23] ✅ Reserva encontrada en BD.
+[2025-03-13 07:20:23] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:20:23] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:20:23] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:20:23] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:22:30] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:22:30] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:22:30] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => Ricardo
+                    [apellidos] => BALCAZAR
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 133
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321modificado
+                    [fecha_hora_llegada] => 2025-03-20T00:47
+                    [fecha_hora_salida] => 2025-03-20T00:47
+                    [informacion_adicional] => dadamodifcado
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => asdadas
+                            [precio] => 300.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:22:30] ✅ Reserva encontrada en BD.
+[2025-03-13 07:22:30] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:22:30] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:22:30] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:22:30] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:27:18] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:27:18] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:27:18] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => Ricardo
+                    [apellidos] => BALCAZAR
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 133
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321modificado
+                    [fecha_hora_llegada] => 2025-03-20T00:47
+                    [fecha_hora_salida] => 2025-03-20T00:47
+                    [informacion_adicional] => dadamodifcado
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => MODIFICADO
+                            [precio] => 300.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:27:18] ✅ Reserva encontrada en BD.
+[2025-03-13 07:27:18] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:27:18] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:27:18] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:27:18] ❌ ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rblweb_reservas.huéspedes_extras' doesn't exist
+[2025-03-13 07:27:44] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:27:44] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:27:44] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => Ricardo
+                    [apellidos] => BALCAZAR
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 133
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321modificado
+                    [fecha_hora_llegada] => 2025-03-20T00:47
+                    [fecha_hora_salida] => 2025-03-20T00:47
+                    [informacion_adicional] => dadamodifcado
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => MODIFICADO
+                            [precio] => 300.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:27:44] ✅ Reserva encontrada en BD.
+[2025-03-13 07:27:44] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:27:44] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:27:44] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:27:44] ❌ ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rblweb_reservas.huéspedes_extras' doesn't exist
+[2025-03-13 07:27:57] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:27:57] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:27:57] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => Ricardo
+                    [apellidos] => BALCAZAR
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 133
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321modificado
+                    [fecha_hora_llegada] => 2025-03-20T00:47
+                    [fecha_hora_salida] => 2025-03-20T00:47
+                    [informacion_adicional] => dadamodifcado
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => MODIFICADO
+                            [precio] => 300.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:27:57] ✅ Reserva encontrada en BD.
+[2025-03-13 07:27:57] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:27:57] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:27:57] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:27:57] ✅ Otro adicional guardado para pasajero 69: Nombre: , Precio: 0.
+[2025-03-13 07:27:57] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:28:25] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:28:25] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:28:25] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => Ricardo
+                    [apellidos] => BALCAZAR
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 133
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321modificado
+                    [fecha_hora_llegada] => 2025-03-20T00:47
+                    [fecha_hora_salida] => 2025-03-20T00:47
+                    [informacion_adicional] => dadamodifcado
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => asdadas
+                            [precio] => 300.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:28:25] ✅ Reserva encontrada en BD.
+[2025-03-13 07:28:25] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:28:25] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:28:25] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:28:25] ✅ Otro adicional guardado para pasajero 69: Nombre: , Precio: 0.
+[2025-03-13 07:28:25] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:30:29] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:30:29] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:30:29] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => Ricardo
+                    [apellidos] => BALCAZAR
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 133
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321modificado
+                    [fecha_hora_llegada] => 2025-03-20T00:47
+                    [fecha_hora_salida] => 2025-03-20T00:47
+                    [informacion_adicional] => dadamodifcado
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => asdadas
+                            [precio] => 300.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:30:29] ✅ Reserva encontrada en BD.
+[2025-03-13 07:30:29] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:30:29] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:30:29] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:30:29] ❌ ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rblweb_reservas.huéspedes_extras' doesn't exist
+[2025-03-13 07:30:59] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:30:59] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:30:59] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => Ricardo
+                    [apellidos] => BALCAZAR
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 133
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321modificado
+                    [fecha_hora_llegada] => 2025-03-20T00:47
+                    [fecha_hora_salida] => 2025-03-20T00:47
+                    [informacion_adicional] => dadamodifcado
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => asdadas
+                            [precio] => 300.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:30:59] ✅ Reserva encontrada en BD.
+[2025-03-13 07:30:59] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:30:59] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:30:59] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:30:59] ✅ Otro adicional actualizado para pasajero 69: Nombre: , Precio: 0.
+[2025-03-13 07:30:59] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:31:25] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:31:25] 🔍 ID Reserva recibido: 193
+[2025-03-13 07:31:25] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 193
+    [codigo_reserva] => EXPLO-00089
+    [estado_reserva] => Cancelación
+    [id_cliente] => 27
+    [id_experiencia] => 2
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-23
+    [id_tarifa] => 3
+    [id_tipo_habitacion] => 3
+    [variante_habitacion] => 11
+    [adultos] => 2
+    [ninos] => 1
+    [infantes] => 1
+    [tc] => 2
+    [pasajero] => Array
+        (
+            [69] => Array
+                (
+                    [nombres] => Ricardo
+                    [apellidos] => BALCAZAR
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 133
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321modificado
+                    [fecha_hora_llegada] => 2025-03-20T00:47
+                    [fecha_hora_salida] => 2025-03-20T00:47
+                    [informacion_adicional] => dadamodifcado
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => MODIFICADO
+                            [precio] => 300
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:31:25] ✅ Reserva encontrada en BD.
+[2025-03-13 07:31:25] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:31:25] ✅ Habitación actualizada correctamente: Tipo: 3, Variante: 11, Adultos: 2, Niños: 1, Infantes: 1, TC: 2
+[2025-03-13 07:31:25] ✅ Pasajero 69 actualizado correctamente.
+[2025-03-13 07:31:25] ✅ Otro adicional actualizado para pasajero 69: Nombre: , Precio: 0.
+[2025-03-13 07:31:25] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:33:53] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:33:53] 🔍 ID Reserva recibido: 194
+[2025-03-13 07:33:53] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 194
+    [codigo_reserva] => EXPLO-00090
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-18
+    [check_out] => 2025-03-20
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [70] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => vasquez
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-21T01:33
+                    [fecha_hora_salida] => 2025-03-20T01:33
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 2000.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:33:53] ✅ Reserva encontrada en BD.
+[2025-03-13 07:33:53] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:33:53] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:33:53] ✅ Pasajero 70 actualizado correctamente.
+[2025-03-13 07:33:53] ⚠️ No se proporcionaron datos para otro adicional, se mantiene el existente.
+[2025-03-13 07:33:53] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:34:05] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:34:05] 🔍 ID Reserva recibido: 194
+[2025-03-13 07:34:05] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 194
+    [codigo_reserva] => EXPLO-00090
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-18
+    [check_out] => 2025-03-20
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [70] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => vasquez
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-21T01:33
+                    [fecha_hora_salida] => 2025-03-20T01:33
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 2000.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:34:05] ✅ Reserva encontrada en BD.
+[2025-03-13 07:34:05] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:34:05] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:34:05] ✅ Pasajero 70 actualizado correctamente.
+[2025-03-13 07:34:05] ⚠️ No se proporcionaron datos para otro adicional, se mantiene el existente.
+[2025-03-13 07:34:05] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:34:44] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:34:44] 🔍 ID Reserva recibido: 194
+[2025-03-13 07:34:44] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 194
+    [codigo_reserva] => EXPLO-00090
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-18
+    [check_out] => 2025-03-20
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [70] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => vasquez
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-21T01:33
+                    [fecha_hora_salida] => 2025-03-20T01:33
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 1000.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:34:44] ✅ Reserva encontrada en BD.
+[2025-03-13 07:34:44] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:34:44] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:34:44] ✅ Pasajero 70 actualizado correctamente.
+[2025-03-13 07:34:44] ⚠️ No se proporcionaron datos para otro adicional, se mantiene el existente.
+[2025-03-13 07:34:44] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:35:19] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:35:19] 🔍 ID Reserva recibido: 194
+[2025-03-13 07:35:19] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 194
+    [codigo_reserva] => EXPLO-00090
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-18
+    [check_out] => 2025-03-20
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [70] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => vasquez
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-21T01:33
+                    [fecha_hora_salida] => 2025-03-20T01:33
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 2000.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:35:19] ✅ Reserva encontrada en BD.
+[2025-03-13 07:35:19] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:35:19] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:35:19] ✅ Pasajero 70 actualizado correctamente.
+[2025-03-13 07:35:19] ⚠️ No se proporcionaron datos para otro adicional, se mantiene el existente.
+[2025-03-13 07:35:19] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:35:56] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:35:56] 🔍 ID Reserva recibido: 194
+[2025-03-13 07:35:56] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 194
+    [codigo_reserva] => EXPLO-00090
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-18
+    [check_out] => 2025-03-20
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [70] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => vasquez
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-21T01:33
+                    [fecha_hora_salida] => 2025-03-20T01:33
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional cambiada
+                            [precio] => 1000.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:35:56] ✅ Reserva encontrada en BD.
+[2025-03-13 07:35:56] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:35:56] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:35:56] ✅ Pasajero 70 actualizado correctamente.
+[2025-03-13 07:35:56] ⚠️ No se proporcionaron datos para otro adicional, se mantiene el existente.
+[2025-03-13 07:35:56] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:36:18] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:36:18] 🔍 ID Reserva recibido: 194
+[2025-03-13 07:36:18] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 194
+    [codigo_reserva] => EXPLO-00090
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-18
+    [check_out] => 2025-03-20
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [70] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => vasquez
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-21T01:33
+                    [fecha_hora_salida] => 2025-03-20T01:33
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 2000.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:36:18] ✅ Reserva encontrada en BD.
+[2025-03-13 07:36:18] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:36:18] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:36:18] ✅ Pasajero 70 actualizado correctamente.
+[2025-03-13 07:36:18] ⚠️ No se proporcionaron datos para otro adicional, se mantiene el existente.
+[2025-03-13 07:36:18] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:39:24] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:39:24] 🔍 ID Reserva recibido: 194
+[2025-03-13 07:39:24] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 194
+    [codigo_reserva] => EXPLO-00090
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-18
+    [check_out] => 2025-03-20
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [70] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => vasquez
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-21T01:33
+                    [fecha_hora_salida] => 2025-03-20T01:33
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 2000.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:39:24] ✅ Reserva encontrada en BD.
+[2025-03-13 07:39:24] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:39:24] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:39:24] ✅ Pasajero 70 actualizado correctamente.
+[2025-03-13 07:39:24] ❌ ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rblweb_reservas.huéspedes_extras' doesn't exist
+[2025-03-13 07:39:50] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:39:50] 🔍 ID Reserva recibido: 194
+[2025-03-13 07:39:50] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 194
+    [codigo_reserva] => EXPLO-00090
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-18
+    [check_out] => 2025-03-20
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [70] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => vasquez
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-21T01:33
+                    [fecha_hora_salida] => 2025-03-20T01:33
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 2000.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:39:50] ✅ Reserva encontrada en BD.
+[2025-03-13 07:39:50] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:39:50] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 1, Adultos: 1, Niños: 0, Infantes: 0, TC: 0
+[2025-03-13 07:39:50] ✅ Pasajero 70 actualizado correctamente.
+[2025-03-13 07:39:50] ✅ Experiencia adicional 1 actualizada para pasajero 70.
+[2025-03-13 07:39:50] ✅ Experiencia adicional 2 guardada para pasajero 70.
+[2025-03-13 07:39:50] ✅ Costo adicional 1 actualizado para pasajero 70.
+[2025-03-13 07:39:50] ✅ Costo adicional 2 guardado para pasajero 70.
+[2025-03-13 07:39:50] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:42:10] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:42:10] 🔍 ID Reserva recibido: 195
+[2025-03-13 07:42:10] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 195
+    [codigo_reserva] => EXPLO-00091
+    [estado_reserva] => Lista de Espera
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-22
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 2
+    [adultos] => 1
+    [ninos] => 1
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [71] => Array
+                (
+                    [nombres] => piero
+                    [apellidos] => balcazar
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-20T01:40
+                    [fecha_hora_salida] => 2025-03-26T01:40
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 400.00
+                        )
+
+                )
+
+            [72] => Array
+                (
+                    [nombres] => piero
+                    [apellidos] => balcazar
+                    [pasaporte] => 3432
+                    [fecha_nacimiento] => 2025-03-27
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 432
+                    [fecha_hora_llegada] => 2025-03-21T01:41
+                    [fecha_hora_salida] => 2025-03-22T01:41
+                    [informacion_adicional] => ai
+                    [experiencias] => Array
+                        (
+                            [0] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => area de diversion
+                            [precio] => 400.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:42:10] ✅ Reserva encontrada en BD.
+[2025-03-13 07:42:10] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:42:10] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 2, Adultos: 1, Niños: 1, Infantes: 0, TC: 0
+[2025-03-13 07:42:10] ✅ Pasajero 71 actualizado correctamente.
+[2025-03-13 07:42:10] ✅ Pasajero 72 actualizado correctamente.
+[2025-03-13 07:42:10] ✅ Experiencia adicional 2 actualizada para pasajero 72.
+[2025-03-13 07:42:10] ✅ Costo adicional 2 actualizado para pasajero 72.
+[2025-03-13 07:42:10] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:42:48] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:42:48] 🔍 ID Reserva recibido: 195
+[2025-03-13 07:42:48] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 195
+    [codigo_reserva] => EXPLO-00091
+    [estado_reserva] => Lista de Espera
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-22
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 2
+    [adultos] => 1
+    [ninos] => 1
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [71] => Array
+                (
+                    [nombres] => piero
+                    [apellidos] => balcazar
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-20T01:40
+                    [fecha_hora_salida] => 2025-03-26T01:40
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 100.00
+                        )
+
+                )
+
+            [72] => Array
+                (
+                    [nombres] => piero
+                    [apellidos] => balcazar
+                    [pasaporte] => 3432
+                    [fecha_nacimiento] => 2025-03-27
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 432
+                    [fecha_hora_llegada] => 2025-03-21T01:41
+                    [fecha_hora_salida] => 2025-03-22T01:41
+                    [informacion_adicional] => ai
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => area de diversion
+                            [precio] => 100.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:42:48] ✅ Reserva encontrada en BD.
+[2025-03-13 07:42:48] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:42:48] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 2, Adultos: 1, Niños: 1, Infantes: 0, TC: 0
+[2025-03-13 07:42:48] ✅ Pasajero 71 actualizado correctamente.
+[2025-03-13 07:42:48] ✅ Pasajero 72 actualizado correctamente.
+[2025-03-13 07:42:48] ✅ Experiencia adicional 1 guardada para pasajero 72.
+[2025-03-13 07:42:48] ✅ Experiencia adicional 2 actualizada para pasajero 72.
+[2025-03-13 07:42:48] ✅ Costo adicional 1 guardado para pasajero 72.
+[2025-03-13 07:42:48] ✅ Costo adicional 2 actualizado para pasajero 72.
+[2025-03-13 07:42:48] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:44:09] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:44:09] 🔍 ID Reserva recibido: 195
+[2025-03-13 07:44:09] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 195
+    [codigo_reserva] => EXPLO-00091
+    [estado_reserva] => Lista de Espera
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-22
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 2
+    [adultos] => 1
+    [ninos] => 1
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [71] => Array
+                (
+                    [nombres] => piero
+                    [apellidos] => balcazar
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-20T01:40
+                    [fecha_hora_salida] => 2025-03-26T01:40
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 100.00
+                        )
+
+                )
+
+            [72] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => balcazar
+                    [pasaporte] => 3432
+                    [fecha_nacimiento] => 2025-03-27
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 432
+                    [fecha_hora_llegada] => 2025-03-21T01:41
+                    [fecha_hora_salida] => 2025-03-22T01:41
+                    [informacion_adicional] => ai
+                    [experiencias] => Array
+                        (
+                            [0] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => area de diversion
+                            [precio] => 100.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:44:09] ✅ Reserva encontrada en BD.
+[2025-03-13 07:44:09] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:44:09] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 2, Adultos: 1, Niños: 1, Infantes: 0, TC: 0
+[2025-03-13 07:44:09] ✅ Pasajero 71 actualizado correctamente.
+[2025-03-13 07:44:09] ✅ Pasajero 72 actualizado correctamente.
+[2025-03-13 07:44:09] ✅ Experiencia adicional 2 actualizada para pasajero 72.
+[2025-03-13 07:44:09] ✅ Costo adicional 2 actualizado para pasajero 72.
+[2025-03-13 07:44:09] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:50:02] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:50:02] 🔍 ID Reserva recibido: 195
+[2025-03-13 07:50:02] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 195
+    [codigo_reserva] => EXPLO-00091
+    [estado_reserva] => Lista de Espera
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-22
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 2
+    [adultos] => 1
+    [ninos] => 1
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [71] => Array
+                (
+                    [nombres] => piero
+                    [apellidos] => balcazar
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-20T01:40
+                    [fecha_hora_salida] => 2025-03-26T01:40
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 100.00
+                        )
+
+                )
+
+            [72] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => balcazar
+                    [pasaporte] => 3432
+                    [fecha_nacimiento] => 2025-03-27
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 432
+                    [fecha_hora_llegada] => 2025-03-21T01:41
+                    [fecha_hora_salida] => 2025-03-22T01:41
+                    [informacion_adicional] => ai
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => area de diversion
+                            [precio] => 100.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:50:02] ✅ Reserva encontrada en BD.
+[2025-03-13 07:50:02] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:50:02] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 2, Adultos: 1, Niños: 1, Infantes: 0, TC: 0
+[2025-03-13 07:50:02] ✅ Pasajero 71 actualizado correctamente.
+[2025-03-13 07:50:02] 🗑️ Registros existentes eliminados para pasajero 71.
+[2025-03-13 07:50:02] ✅ Experiencia adicional 1 guardada para pasajero 71.
+[2025-03-13 07:50:02] ✅ Costo adicional 1 guardado para pasajero 71.
+[2025-03-13 07:50:02] ✅ Otro adicional guardado para pasajero 71: Nombre: bote adiciional, Precio: 100.00.
+[2025-03-13 07:50:02] ✅ Pasajero 72 actualizado correctamente.
+[2025-03-13 07:50:02] 🗑️ Registros existentes eliminados para pasajero 72.
+[2025-03-13 07:50:02] ✅ Experiencia adicional 1 guardada para pasajero 72.
+[2025-03-13 07:50:02] ✅ Experiencia adicional 2 guardada para pasajero 72.
+[2025-03-13 07:50:02] ✅ Costo adicional 1 guardado para pasajero 72.
+[2025-03-13 07:50:02] ✅ Costo adicional 2 guardado para pasajero 72.
+[2025-03-13 07:50:02] ✅ Otro adicional guardado para pasajero 72: Nombre: area de diversion, Precio: 100.00.
+[2025-03-13 07:50:02] ✅ Transacción confirmada con éxito.
+[2025-03-13 07:50:25] === INICIO DE EJECUCIÓN ===
+[2025-03-13 07:50:25] 🔍 ID Reserva recibido: 195
+[2025-03-13 07:50:25] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 195
+    [codigo_reserva] => EXPLO-00091
+    [estado_reserva] => Lista de Espera
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-20
+    [check_out] => 2025-03-22
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 2
+    [adultos] => 1
+    [ninos] => 1
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [71] => Array
+                (
+                    [nombres] => piero
+                    [apellidos] => balcazar
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-20
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-20T01:40
+                    [fecha_hora_salida] => 2025-03-26T01:40
+                    [informacion_adicional] => adic
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => bote adiciional
+                            [precio] => 100.00
+                        )
+
+                )
+
+            [72] => Array
+                (
+                    [nombres] => jesica
+                    [apellidos] => balcazar
+                    [pasaporte] => 3432
+                    [fecha_nacimiento] => 2025-03-27
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 432
+                    [fecha_hora_llegada] => 2025-03-21T01:41
+                    [fecha_hora_salida] => 2025-03-22T01:41
+                    [informacion_adicional] => ai
+                    [experiencias] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [costos] => Array
+                        (
+                            [0] => 1
+                            [1] => 2
+                        )
+
+                    [otro_adicional] => Array
+                        (
+                            [nombre] => area de diversion final
+                            [precio] => 300.00
+                        )
+
+                )
+
+        )
+
+)
+
+[2025-03-13 07:50:25] ✅ Reserva encontrada en BD.
+[2025-03-13 07:50:25] ✅ Reserva actualizada correctamente.
+[2025-03-13 07:50:25] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 2, Adultos: 1, Niños: 1, Infantes: 0, TC: 0
+[2025-03-13 07:50:25] ✅ Pasajero 71 actualizado correctamente.
+[2025-03-13 07:50:25] 🗑️ Registros existentes eliminados para pasajero 71.
+[2025-03-13 07:50:25] ✅ Experiencia adicional 1 guardada para pasajero 71.
+[2025-03-13 07:50:25] ✅ Costo adicional 1 guardado para pasajero 71.
+[2025-03-13 07:50:25] ✅ Otro adicional guardado para pasajero 71: Nombre: bote adiciional, Precio: 100.00.
+[2025-03-13 07:50:25] ✅ Pasajero 72 actualizado correctamente.
+[2025-03-13 07:50:25] 🗑️ Registros existentes eliminados para pasajero 72.
+[2025-03-13 07:50:25] ✅ Experiencia adicional 1 guardada para pasajero 72.
+[2025-03-13 07:50:25] ✅ Experiencia adicional 2 guardada para pasajero 72.
+[2025-03-13 07:50:25] ✅ Costo adicional 1 guardado para pasajero 72.
+[2025-03-13 07:50:25] ✅ Costo adicional 2 guardado para pasajero 72.
+[2025-03-13 07:50:25] ✅ Otro adicional guardado para pasajero 72: Nombre: area de diversion final, Precio: 300.00.
+[2025-03-13 07:50:25] ✅ Transacción confirmada con éxito.
+[2025-03-14 16:21:52] === INICIO DE EJECUCIÓN ===
+[2025-03-14 16:21:52] 🔍 ID Reserva recibido: 201
+[2025-03-14 16:21:52] 📌 Datos recibidos:
+Array
+(
+    [id_reserva] => 201
+    [codigo_reserva] => EXPLO-00097
+    [estado_reserva] => Bloqueo
+    [id_cliente] => 23
+    [id_experiencia] => 1
+    [check_in] => 2025-05-14
+    [check_out] => 2025-05-16
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [variante_habitacion] => 2
+    [adultos] => 1
+    [ninos] => 1
+    [infantes] => 0
+    [tc] => 0
+)
+
+[2025-03-14 16:21:52] ✅ Reserva encontrada en BD.
+[2025-03-14 16:21:52] ✅ Reserva actualizada correctamente.
+[2025-03-14 16:21:52] ✅ Habitación actualizada correctamente: Tipo: 1, Variante: 2, Adultos: 1, Niños: 1, Infantes: 0, TC: 0
+[2025-03-14 16:21:52] ⚠️ No se proporcionaron datos para otro adicional, se mantiene el existente.
+[2025-03-14 16:21:52] ✅ Transacción confirmada con éxito.

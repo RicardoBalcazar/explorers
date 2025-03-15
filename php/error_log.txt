@@ -1,0 +1,859 @@
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00092
+    [estado_reserva] => Bloqueo
+    [id_cliente] => 23
+    [id_experiencia] => 2
+    [check_in] => 2025-05-11
+    [check_out] => 2025-05-14
+    [id_tarifa] => 2
+    [habitaciones] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 7
+            [1] => 4
+        )
+
+    [adultos] => Array
+        (
+            [0] => 3
+            [1] => 2
+        )
+
+    [ninos] => Array
+        (
+            [0] => 0
+            [1] => 1
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 1
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+            [1] => 2
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00092
+    [estado_reserva] => Confirmación
+    [id_cliente] => 23
+    [id_experiencia] => 2
+    [check_in] => 2025-05-12
+    [check_out] => 2025-05-15
+    [id_tarifa] => 2
+    [habitaciones] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 2
+            [1] => 1
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 9
+            [1] => 1
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [ninos] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+)
+Método no permitidoDatos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00092
+    [estado_reserva] => Bloqueo
+    [id_cliente] => 23
+    [id_experiencia] => 1
+    [check_in] => 2025-05-10
+    [check_out] => 2025-05-12
+    [id_tarifa] => 2
+    [habitaciones] => Array
+        (
+            [0] => 1
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 1
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+        )
+
+    [ninos] => Array
+        (
+            [0] => 0
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+        )
+
+)
+Método no permitidoDatos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00092
+    [estado_reserva] => Confirmación
+    [id_cliente] => 15
+    [id_experiencia] => 2
+    [check_in] => 2025-05-10
+    [check_out] => 2025-05-13
+    [id_tarifa] => 2
+    [habitaciones] => Array
+        (
+            [0] => 1
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+        )
+
+    [ninos] => Array
+        (
+            [0] => 0
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00093
+    [estado_reserva] => Bloqueo
+    [id_cliente] => 25
+    [id_experiencia] => 1
+    [check_in] => 2025-05-17
+    [check_out] => 2025-05-19
+    [id_tarifa] => 3
+    [habitaciones] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 2
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 3
+            [2] => 3
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 2
+        )
+
+    [ninos] => Array
+        (
+            [0] => 0
+            [1] => 0
+            [2] => 1
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 0
+            [2] => 1
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+            [1] => 0
+            [2] => 2
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00095
+    [estado_reserva] => Bloqueo
+    [id_cliente] => 23
+    [id_experiencia] => 1
+    [check_in] => 2025-05-14
+    [check_out] => 2025-05-16
+    [id_tarifa] => 1
+    [habitaciones] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 9
+        )
+
+    [adultos] => Array
+        (
+            [0] => 2
+            [1] => 1
+        )
+
+    [ninos] => Array
+        (
+            [0] => 1
+            [1] => 1
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+            [1] => 1
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00096
+    [estado_reserva] => Confirmación
+    [id_cliente] => 23
+    [id_experiencia] => 1
+    [check_in] => 2025-05-14
+    [check_out] => 2025-05-16
+    [id_tarifa] => 2
+    [habitaciones] => Array
+        (
+            [0] => 5
+            [1] => 6
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 1
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 7
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [ninos] => Array
+        (
+            [0] => 0
+            [1] => 1
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00097
+    [estado_reserva] => 
+    [id_cliente] => 26
+    [id_experiencia] => 1
+    [check_in] => 2025-05-14
+    [check_out] => 2025-05-16
+    [id_tarifa] => 1
+    [habitaciones] => Array
+        (
+            [0] => 11
+            [1] => 12
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 3
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+            [1] => 11
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [ninos] => Array
+        (
+            [0] => 1
+            [1] => 0
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 1
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00097
+    [estado_reserva] => 
+    [id_cliente] => 26
+    [id_experiencia] => 1
+    [check_in] => 2025-05-14
+    [check_out] => 2025-05-16
+    [id_tarifa] => 1
+    [habitaciones] => Array
+        (
+            [0] => 11
+            [1] => 12
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 3
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+            [1] => 11
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [ninos] => Array
+        (
+            [0] => 1
+            [1] => 0
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 1
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00097
+    [estado_reserva] => 
+    [id_cliente] => 26
+    [id_experiencia] => 1
+    [check_in] => 2025-05-14
+    [check_out] => 2025-05-16
+    [id_tarifa] => 1
+    [habitaciones] => Array
+        (
+            [0] => 11
+            [1] => 12
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 3
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+            [1] => 11
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [ninos] => Array
+        (
+            [0] => 1
+            [1] => 0
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 1
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00097
+    [estado_reserva] => 
+    [id_cliente] => 26
+    [id_experiencia] => 1
+    [check_in] => 2025-05-14
+    [check_out] => 2025-05-16
+    [id_tarifa] => 1
+    [habitaciones] => Array
+        (
+            [0] => 11
+            [1] => 12
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 3
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+            [1] => 11
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [ninos] => Array
+        (
+            [0] => 1
+            [1] => 0
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 1
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00097
+    [estado_reserva] => Confirmación
+    [id_cliente] => 23
+    [id_experiencia] => 1
+    [check_in] => 2025-05-14
+    [check_out] => 2025-05-16
+    [id_tarifa] => 2
+    [habitaciones] => Array
+        (
+            [0] => 11
+            [1] => 12
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+            [1] => 3
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [ninos] => Array
+        (
+            [0] => 1
+            [1] => 1
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00098
+    [estado_reserva] => Cancelación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-05-21
+    [check_out] => 2025-05-23
+    [id_tarifa] => 1
+    [habitaciones] => Array
+        (
+            [0] => 1
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+        )
+
+    [ninos] => Array
+        (
+            [0] => 1
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00101
+    [estado_reserva] => Confirmación
+    [id_cliente] => 15
+    [id_experiencia] => 2
+    [check_in] => 2025-05-20
+    [check_out] => 2025-05-23
+    [id_tarifa] => 1
+    [habitaciones] => Array
+        (
+            [0] => 15
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 1
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+        )
+
+    [ninos] => Array
+        (
+            [0] => 0
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00102
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 2
+    [check_in] => 2025-05-15
+    [check_out] => 2025-05-18
+    [id_tarifa] => 2
+    [habitaciones] => Array
+        (
+            [0] => 12
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+        )
+
+    [ninos] => Array
+        (
+            [0] => 1
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00103
+    [estado_reserva] => Confirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-05-24
+    [check_out] => 2025-05-26
+    [id_tarifa] => 1
+    [habitaciones] => Array
+        (
+            [0] => 13
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+        )
+
+    [ninos] => Array
+        (
+            [0] => 1
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+        )
+
+)
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00104
+    [estado_reserva] => Bloqueo
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-05-01
+    [check_out] => 2025-05-03
+    [id_tarifa] => 1
+    [habitaciones] => Array
+        (
+            [0] => 32
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+        )
+
+    [adultos] => Array
+        (
+            [0] => 2
+        )
+
+    [ninos] => Array
+        (
+            [0] => 1
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 0
+        )
+
+)

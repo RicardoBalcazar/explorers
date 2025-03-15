@@ -1,0 +1,193 @@
+2025-03-11 23:56:48 - Array
+(
+    [codigo_reserva] => EXPLO-00082
+    [id_cliente] => 15
+    [estado_reserva] => Reconfirmación
+    [id_experiencia] => 1
+    [check_in] => 2025-03-12
+    [check_out] => 2025-03-14
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [id_variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 1
+    [pasajero] => Array
+        (
+            [0] => Array
+                (
+                    [nombre] => Ricardo
+                    [apellido] => Balcazar
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-13T17:39
+                    [fecha_hora_salida] => 2025-03-27T17:39
+                    [informacion_adicional] => adulto1
+                )
+
+            [1] => Array
+                (
+                    [nombre] => piero
+                    [apellido] => balcazar
+                    [pasaporte] => 3432
+                    [fecha_nacimiento] => 2025-03-26
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 432
+                    [fecha_hora_llegada] => 2025-03-19T17:39
+                    [fecha_hora_salida] => 2025-03-26T17:39
+                    [informacion_adicional] => tc1
+                )
+
+        )
+
+    [id_cant_hab] => 
+)
+
+2025-03-11 23:58:56 - Array
+(
+    [codigo_reserva] => EXPLO-00082
+    [id_cliente] => 15
+    [estado_reserva] => Reconfirmación
+    [id_experiencia] => 1
+    [check_in] => 2025-03-12
+    [check_out] => 2025-03-14
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [id_variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 1
+    [pasajero] => Array
+        (
+            [0] => Array
+                (
+                    [nombre] => Ricardo
+                    [apellido] => Balcazar
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-13T17:39
+                    [fecha_hora_salida] => 2025-03-27T17:39
+                    [informacion_adicional] => adulto1
+                )
+
+            [1] => Array
+                (
+                    [nombre] => piero
+                    [apellido] => balcazar
+                    [pasaporte] => 3432
+                    [fecha_nacimiento] => 2025-03-26
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 432
+                    [fecha_hora_llegada] => 2025-03-19T17:39
+                    [fecha_hora_salida] => 2025-03-26T17:39
+                    [informacion_adicional] => tc1
+                )
+
+        )
+
+    [id_cant_hab] => 
+)
+
+2025-03-12 00:04:07 - Array
+(
+    [codigo_reserva] => EXPLO-00082
+    [id_cliente] => 15
+    [estado_reserva] => Reconfirmación
+    [id_experiencia] => 1
+    [check_in] => 2025-03-12
+    [check_out] => 2025-03-14
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [id_variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 1
+    [pasajero] => Array
+        (
+            [0] => Array
+                (
+                    [nombre] => Ricardo
+                    [apellido] => Balcazar
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-19
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-13T17:39
+                    [fecha_hora_salida] => 2025-03-27T17:39
+                    [informacion_adicional] => adulto1
+                )
+
+            [1] => Array
+                (
+                    [nombre] => piero
+                    [apellido] => balcazar
+                    [pasaporte] => 3432
+                    [fecha_nacimiento] => 2025-03-26
+                    [id_pais] => 139
+                    [genero] => Masculino
+                    [alimentacion] => Normal
+                    [numero_vuelo] => 432
+                    [fecha_hora_llegada] => 2025-03-19T17:39
+                    [fecha_hora_salida] => 2025-03-26T17:39
+                    [informacion_adicional] => tc1
+                )
+
+        )
+
+    [id_cant_hab] => 
+)
+
+2025-03-12 00:06:38 - Array
+(
+    [codigo_reserva] => EXPLO-00082
+    [id_cliente] => 15
+    [estado_reserva] => Reconfirmación
+    [id_experiencia] => 1
+    [check_in] => 2025-03-12
+    [check_out] => 2025-03-14
+    [id_tarifa] => 1
+    [id_tipo_habitacion] => 1
+    [id_variante_habitacion] => 1
+    [adultos] => 1
+    [ninos] => 0
+    [infantes] => 0
+    [tc] => 0
+    [pasajero] => Array
+        (
+            [0] => Array
+                (
+                    [nombre] => piero
+                    [apellido] => balcazar
+                    [pasaporte] => 2321332
+                    [fecha_nacimiento] => 2025-03-13
+                    [id_pais] => 139
+                    [genero] => Femenino
+                    [alimentacion] => Vegano
+                    [numero_vuelo] => 2121321
+                    [fecha_hora_llegada] => 2025-03-13T18:06
+                    [fecha_hora_salida] => 2025-03-27T18:06
+                    [informacion_adicional] => adulto1
+                )
+
+        )
+
+    [id_cant_hab] => 10
+)
+

@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* ✅ Contenedor Principal */
+.contenedor-editar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Cuadros de Sección */
+.detalle-reserva,
+.habitacion-reserva,
+.pasajeros-reserva {
+    width: 100%;
+    max-width: 1200px;
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Primera Sección: Detalles de la Reserva */
+.detalle-reserva {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.detalle-reserva .form-group {
+    flex: 1 1 calc(33.33% - 15px);
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
+
+/* ✅ Segunda Sección: Habitaciones */
+.habitacion-reserva {
+    display: flex;
+   gap: 15px;
+}
+
+.habitacion-reserva .form-group {
+    flex: 1 1 calc(33.33% - 15px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ✅ Tercera Sección: Pasajeros */
+.pasajeros-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pasajero-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.pasajero-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-eliminar-pasajero {
+    background: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-eliminar-pasajero:hover {
+    background: #c82333;
+}
+
+/* 🔹 Estilos para la sección de adicionales */
+.adicionales {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.adicionales-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.adicionales-box h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.adicionales-box input {
+    margin-right: 5px;
+}
+
+.estado-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.estado-indicador {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #ccc; /* Borde para mejor visibilidad */
+}
+
+.calendario-dia.no-disponible {
+    background-color: #d3d3d3; /* Color gris tenue */
+    color: #888; /* Texto más claro */
+    pointer-events: none; /* Evita clics en días ocupados */
+    opacity: 0.5; /* Más transparencia */
+}
+.no-disponible {
+    background-color: #d3d3d3 !important; /* Gris claro */
+    color: #a0a0a0 !important; /* Texto más claro */
+    pointer-events: none; /* No se puede hacer clic */
+}
+
+/* 📌 Contenedor general */
+.habitaciones-container {
+    width: 100%;
+    margin-top: 15px;
+    max-width: 1200px;
+}
+
+/* 📌 Encabezado de la tabla */
+.habitaciones-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* 📌 Asegurar que los títulos de cabecera tengan el mismo ancho que los inputs */
+.habitaciones-header span {
+    flex: 1;
+    text-align: center;
+}
+
+/* 📌 Estilos de las filas de habitaciones */
+.habitacion-row {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s;
+}
+
+/* 📌 Alternar color de fila */
+.habitacion-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* 📌 Checkbox */
+.habitacion-checkbox {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* 📌 Nombre de habitación */
+.hab-nombre {
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+/* 📌 Estilos generales de selects */
+.habitacion-row select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* 📌 Tamaño ajustado de los selects */
+.tipo-hab, .variante-hab {
+    flex: 2;
+    width: 150px;
+    text-align: center;
+}
+
+.adultos, .ninos, .infantes, .tc {
+    flex: 1;
+    width: 60px;
+    text-align: center;
+}
+
+/* 📌 Hover */
+.habitacion-row:hover {
+    background-color: #eaeaea;
+}
+
+.habitacion-row.reservada {
+    opacity: 0.5;
+    pointer-events: none;
+}

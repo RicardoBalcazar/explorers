@@ -1,0 +1,660 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 25px;
+}
+
+.calendario-container { 
+    overflow-x: auto; 
+    padding: 10px;
+}
+
+/* Estilos de la tabla */
+table {
+    border-collapse: collapse; 
+    width: 100%; 
+    min-width: 1200px; 
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td { 
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center; 
+}
+
+h2 {
+    margin: 0 auto;
+}
+
+/* Color primario para los encabezados de días */
+th {
+    background-color: var(--primary-color, #333333);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Suave color plomo para las celdas de habitaciones */
+td {
+    background-color: #f4f4f4;
+}
+
+/* Estilos para nombres de habitaciones */
+.hab-nombre { 
+    font-weight: bold; 
+    background: #e9ecef;
+    color: #212529;
+}
+
+/* Efecto hover en celdas */
+td:hover {
+    background-color: #d6d6d6;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Estilos para hacer la tabla más legible */
+tr:nth-child(even) td {
+    background-color: #f8f8f8;
+}
+
+/* Estilos del Tooltip */
+#tooltip-reserva {
+    position: absolute;
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    font-size: 14px;
+    max-width: 250px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+/* Ocultar tooltip por defecto */
+.tooltip-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Mostrar tooltip */
+.tooltip-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Tooltip General */
+#tooltip-reserva {
+    position: absolute;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    max-width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+}
+
+/* Tooltip Visible */
+.tooltip-visible {
+    display: block !important;
+}
+
+/* Tooltip Encabezado */
+.tooltip-header {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+/* Información General */
+.tooltip-content p {
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+/* Estado con Icono de Color */
+.tooltip-content .estado {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.tooltip-content .estado-indicador {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #fff;
+}
+
+/* Habitaciones */
+#tooltip-habitaciones {
+    margin-top: 5px;
+}
+
+.tooltip-habitacion {
+    background-color: #333;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.tooltip-habitacion strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+/* Usuario */
+#tooltip-usuario {
+    font-weight: bold;
+    color: #ccc;
+    text-align: center;
+    display: block;
+}
+/* Estilos para el botón EDITAR en el tooltip */
+.btn-editar {
+    display: block;
+    width: 100%;
+    background-color: #009FE3;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn-editar:hover {
+    background-color: #0077b6;
+}
+
+/* ✅ Estilos generales del modal de filtros */
+.modal-filtro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* ✅ Mostrar modal cuando está activo */
+.modal-filtro.mostrar {
+    transform: translateX(0);
+}
+
+/* ✅ Botón de cerrar modal */
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ✅ Estilos de los títulos */
+.modal-contenido h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ✅ Estilos de las etiquetas */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ✅ Estilos de los select */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+/* ✅ Contenedor de los colores de estado */
+.estado-colores {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* ✅ Botones de selección de estado */
+.estado-opcion {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* ✅ Efecto al seleccionar un estado */
+.estado-opcion:hover {
+    transform: scale(1.2);
+}
+
+/* ✅ Botón de aplicar filtros */
+.btn-aplicar {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #39B54A;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+}
+
+/* ✅ Efecto hover en botón */
+.btn-aplicar:hover {
+    background-color: #2e8b3e;
+}
+
+/* Estilos generales del modal */
+.modal-filtro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.modal-filtro.modal-activo {
+    transform: translateX(0);
+}
+
+/* Botón de cerrar */
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Botón de filtros */
+.btn-filtros {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background: #89B126;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estados de reserva en colores */
+.estado-colores {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.estado-opcion {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #373F3F;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    max-width: 250px;
+}
+
+.titulo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.datos-usuario {
+    text-align: right;
+    font-size: 14px;
+}
+
+.datos-usuario p {
+    margin: 2px 0;
+}
+
+.mes-actual-container {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #36383a;
+    background-color: rgb(212, 212, 212);
+    border-radius: 15px;
+}
+
+.modal_indiv {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_indiv-contenido {
+    text-align: left;
+    background: white;
+    width: 50%; /* Ajuste de ancho */
+    max-width: 700px; /* Limitar ancho máximo */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado perfecto */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-height: 90vh; /* Altura máxima del modal */
+    overflow-y: auto; /* Permitir scroll dentro del modal si el contenido es muy largo */
+}
+
+.cerrar-modal_indiv {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.oculto {
+    display: none !important;
+}
+
+
+/* Estilos para las tabs */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.tab-link {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tab-link.active {
+    border-bottom: 3px solid #007BFF;
+    color: #007BFF;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilo para organizar los campos en columna */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo */
+    margin: auto;
+}
+
+/* Ajustar etiquetas */
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Ajuste de inputs y selects */
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Espaciado para los elementos */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos del botón */
+.btn-guardar {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-guardar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el estado con color dinámico */
+.estado-container {
+    display: flex;
+    align-items: center;
+}
+
+.estado-indicador {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+/* ✅ Estilos para Inputs y Selects */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Mismo borde de los select */
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    outline: none;
+}
+
+/* ✅ Ajustar tamaño de los inputs al de los selects */
+.form-group select {
+    appearance: none; /* Quitar flecha predeterminada en algunos navegadores */
+}
+
+/* ✅ Estilos cuando el usuario interactúa */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ✅ Estilo para mejorar apariencia de los selects */
+.form-group select {
+    cursor: pointer;
+}
+
+/* ✅ Estilos para los bloques de pasajeros */
+.pasajero-form {
+    background-color: #f7f7f7; /* Gris claro */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* 🔹 Contenedor de formulario: FLEXBOX */
+.pasajero-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* 🔹 Los primeros 10 campos se distribuyen en 2 columnas */
+.pasajero-container .form-group {
+    flex: 1 1 calc(50% - 15px); /* 50% del ancho con margen */
+    min-width: 250px;
+}
+
+/* 🔹 Asegurar que Información Adicional ocupe toda la fila */
+.pasajero-container .info-adicional {
+    flex: 1 1 100%;
+}
+
+/* 🔹 Adicionales en una sola columna */
+.adicionales {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ocupar todo el ancho */
+    margin-top: 15px;
+}
+
+/* 🔹 Contenedores individuales dentro de Adicionales */
+.adicionales-container {
+    background: #f1f1f1; /* Un poco más oscuro para diferenciar */
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Títulos de cada sección */
+.pasajero-container h4 {
+    width: 100%;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Estilo uniforme para inputs y selects */
+.pasajero-container input,
+.pasajero-container select,
+.pasajero-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 🔹 Espaciado para inputs de "Otro Adicional" */
+.otro-adicional input {
+    margin-bottom: 10px;
+}
+/* 🔹 Alinear el texto y el checkbox en línea */
+.adicionales-container label {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaciado entre el checkbox y el texto */
+}
+
+/* 🔹 Ajustar el tamaño del checkbox */
+.adicionales-container input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.titulo_pas {
+    width: 100%;
+    flex: 1 calc(100% - 15px); /* 50% del ancho con margen */
+
+}
+
+h3 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*ESTILOS ADICIONALES*/
+
+
+
+
+
+
