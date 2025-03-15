@@ -490,91 +490,150 @@ function cargarHabitacionesDisponibles() {
 }
 //FIN OBTENER RESERVAS Y PINTARLAS EN LAS HABITACIONES
 
-//modal agregar pasajeros
+//MODAL PASAJEROS
+
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById("modalPasajeros");
     const span = document.getElementsByClassName("close")[0];
     const pasajerosContainer = document.getElementById("pasajerosContainer");
+    let pasajerosData = {}; // Variable temporal para guardar los datos de los pasajeros
+    let listaPaises = []; // Variable para almacenar los países
+
+    // Función para rellenar el formulario de pasajeros con datos guardados
+    function rellenarFormularioPasajeros(tipo, index, data) {
+        return `
+            <div class="pasajero-form">
+                <h3>${tipo.charAt(0).toUpperCase() + tipo.slice(1)} ${index}</h3>
+                <div class="form-row">
+                    <div class="form-group"><label>Nombres: <input type="text" name="${tipo}_nombres[]" value="${data[`${tipo}_nombres[]`] || ''}" required></label></div>
+                    <div class="form-group"><label>Apellidos: <input type="text" name="${tipo}_apellidos[]" value="${data[`${tipo}_apellidos[]`] || ''}" required></label></div>
+                    <div class="form-group"><label>Pasaporte: <input type="text" name="${tipo}_pasaporte[]" value="${data[`${tipo}_pasaporte[]`] || ''}" required></label></div>
+                    <div class="form-group"><label>Fecha de Nacimiento: <input type="date" name="${tipo}_fecha_nacimiento[]" value="${data[`${tipo}_fecha_nacimiento[]`] || ''}" required></label></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group"><label>País: <select name="${tipo}_pais[]" required>${getPaisesOptions(data[`${tipo}_pais[]`])}</select></label></div>
+                    <div class="form-group"><label>Género: 
+                        <select name="${tipo}_genero[]" required>
+                            <option value="Masculino" ${data[`${tipo}_genero[]`] === 'Masculino' ? 'selected' : ''}>Masculino</option>
+                            <option value="Femenino" ${data[`${tipo}_genero[]`] === 'Femenino' ? 'selected' : ''}>Femenino</option>
+                        </select>
+                    </label></div>
+                    <div class="form-group"><label>Alimentación: 
+                        <select name="${tipo}_alimentacion[]" required>
+                            <option value="Normal" ${data[`${tipo}_alimentacion[]`] === 'Normal' ? 'selected' : ''}>Normal</option>
+                            <option value="Vegano" ${data[`${tipo}_alimentacion[]`] === 'Vegano' ? 'selected' : ''}>Vegano</option>
+                        </select>
+                    </label></div>
+                    <div class="form-group"><label>Número de Vuelo: <input type="text" name="${tipo}_numero_vuelo[]" value="${data[`${tipo}_numero_vuelo[]`] || ''}" required></label></div>
+                    <div class="form-group"><label>Fecha y Hora de Llegada: <input type="datetime-local" name="${tipo}_fecha_hora_llegada[]" value="${data[`${tipo}_fecha_hora_llegada[]`] || ''}" required></label></div>
+                    <div class="form-group"><label>Fecha y Hora de Salida: <input type="datetime-local" name="${tipo}_fecha_hora_salida[]" value="${data[`${tipo}_fecha_hora_salida[]`] || ''}" required></label></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group"><label>Información adicional: <textarea name="${tipo}_informacion_adicional[]">${data[`${tipo}_informacion_adicional[]`] || ''}</textarea></label></div>
+                
+                    <!-- 🔹 Experiencias Adicionales (Checkbox) -->
+                    <div class="adicionales-container">
+                        <label><strong>Experiencias Adicionales:</strong></label>
+                        <div id="experiencias_adicionales_${index}" class="experiencias-adicionales">
+                            ${listaExperienciasAd.map(exp => `
+                                <label class="check_pas">
+                                    <input type="checkbox" name="pasajero[${index}][experiencias_adicionales][]" value="${exp.id_experiencia_adicional}" ${data[`pasajero[${index}][experiencias_adicionales][]`] && data[`pasajero[${index}][experiencias_adicionales][]`].includes(exp.id_experiencia_adicional) ? 'checked' : ''}>
+                                    ${exp.nombre_experiencia} - $${exp.precio}
+                                </label>
+                            `).join("")}
+                        </div>
+                    </div>
+
+                    <!-- 🔹 Costos Adicionales (Checkbox) -->
+                    <div class="adicionales-container">
+                        <label><strong>Costos Adicionales:</strong></label>
+                        <div id="costos_adicionales_${index}" class="costos-adicionales">
+                            ${listaCostosAd.map(costo => `
+                                <label>
+                                    <input type="checkbox" name="pasajero[${index}][costos_adicionales][]" value="${costo.id_adicional_otros}" ${data[`pasajero[${index}][costos_adicionales][]`] && data[`pasajero[${index}][costos_adicionales][]`].includes(costo.id_adicional_otros) ? 'checked' : ''}>
+                                    ${costo.nombre_adicional} - $${costo.precio}
+                                </label>
+                            `).join("")}
+                        </div>
+                    </div>
+
+                    <div class="otro-adicional">
+                        <h4>Otro Adicional</h4>
+                        <div class="form-group"><label>Nombre: <input type="text" name="${tipo}_otro_nombre[]" value="${data[`${tipo}_otro_nombre[]`] || ''}"></label></div>
+                        <div class="form-group"><label>Precio: <input type="number" name="${tipo}_otro_precio[]" value="${data[`${tipo}_otro_precio[]`] || ''}"></label></div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
 
     // Función para cargar el formulario de pasajeros
     function cargarFormularioPasajeros(habitacionId) {
         pasajerosContainer.innerHTML = ''; // Limpiar el contenedor
 
-        // Obtener los valores seleccionados
-        const fila = document.querySelector(`.habitacion-row[data-id="${habitacionId}"]`);
-        const adultos = fila.querySelector('.adultos').value;
-        const ninos = fila.querySelector('.ninos').value;
-        const infantes = fila.querySelector('.infantes').value;
-        const tc = fila.querySelector('.tc').value;
+        // Verificar si ya existen datos guardados para la habitación
+        if (pasajerosData[habitacionId]) {
+            const pasajeros = pasajerosData[habitacionId];
+            Object.keys(pasajeros).forEach((key) => {
+                pasajeros[key].forEach((value, i) => {
+                    pasajerosContainer.innerHTML += rellenarFormularioPasajeros(key, i + 1, value);
+                });
+            });
+        } else {
+            // Obtener los valores seleccionados
+            const fila = document.querySelector(`.habitacion-row[data-id="${habitacionId}"]`);
+            const adultos = fila.querySelector('.adultos').value;
+            const ninos = fila.querySelector('.ninos').value;
+            const infantes = fila.querySelector('.infantes').value;
+            const tc = fila.querySelector('.tc').value;
 
-        // Crear formularios dinámicamente
-        for (let i = 0; i < adultos; i++) {
-            pasajerosContainer.innerHTML += crearFormularioPasajero('adulto', i + 1);
-        }
-        for (let i = 0; i < ninos; i++) {
-            pasajerosContainer.innerHTML += crearFormularioPasajero('niño', i + 1);
-        }
-        for (let i = 0; i < infantes; i++) {
-            pasajerosContainer.innerHTML += crearFormularioPasajero('infante', i + 1);
-        }
-        for (let i = 0; i < tc; i++) {
-            pasajerosContainer.innerHTML += crearFormularioPasajero('tc', i + 1);
+            // Crear formularios dinámicamente
+            for (let i = 0; i < adultos; i++) {
+                pasajerosContainer.innerHTML += crearFormularioPasajero('adulto', i + 1);
+            }
+            for (let i = 0; i < ninos; i++) {
+                pasajerosContainer.innerHTML += crearFormularioPasajero('niño', i + 1);
+            }
+            for (let i = 0; i < infantes; i++) {
+                pasajerosContainer.innerHTML += crearFormularioPasajero('infante', i + 1);
+            }
+            for (let i = 0; i < tc; i++) {
+                pasajerosContainer.innerHTML += crearFormularioPasajero('tc', i + 1);
+            }
         }
     }
 
-        // ✅ Cargar experiencias adicionales desde get_experiencias_ad.php
-        function cargarExperienciasAd() {
-            fetch("api/get_experiencias_ad.php")
-                .then(response => response.json())
-                .then(experiencias => {
-                    listaExperienciasAd = experiencias;
-                    console.log("✅ Experiencias Adicionales cargadas:", listaExperienciasAd);
-                })
-                .catch(error => console.error("❌ Error al obtener experiencias adicionales:", error));
-        }
-    
-        // ✅ Cargar costos adicionales desde get_costos_ad.php
-        function cargarCostosAd() {
-            fetch("api/get_costos_ad.php")
-                .then(response => response.json())
-                .then(costos => {
-                    listaCostosAd = costos;
-                    console.log("✅ Costos Adicionales cargados:", listaCostosAd);
-                })
-                .catch(error => console.error("❌ Error al obtener costos adicionales:", error));
-        }
-
     // Función para crear el formulario de pasajeros
-    function crearFormularioPasajero(tipo, index) {
+    function crearFormularioPasajero(tipo, index, data = {}) {
         return `
             <div class="pasajero-form">
                 <h3>${tipo.charAt(0).toUpperCase() + tipo.slice(1)} ${index}</h3>
                 <div class="form-row">
-                <div class="form-group"><label>Nombres: <input type="text" name="${tipo}_nombres[]" required></label></div>
-                <div class="form-group"><label>Apellidos: <input type="text" name="${tipo}_apellidos[]" required></label></div>
-                <div class="form-group"><label>Pasaporte: <input type="text" name="${tipo}_pasaporte[]" required></label></div>
-                <div class="form-group"><label>Fecha de Nacimiento: <input type="date" name="${tipo}_fecha_nacimiento[]" required></label></div>
+                <div class="form-group"><label>Nombres: <input type="text" name="${tipo}_nombres[]" value="${data[`${tipo}_nombres[]`] || ''}" required></label></div>
+                <div class="form-group"><label>Apellidos: <input type="text" name="${tipo}_apellidos[]" value="${data[`${tipo}_apellidos[]`] || ''}" required></label></div>
+                <div class="form-group"><label>Pasaporte: <input type="text" name="${tipo}_pasaporte[]" value="${data[`${tipo}_pasaporte[]`] || ''}" required></label></div>
+                <div class="form-group"><label>Fecha de Nacimiento: <input type="date" name="${tipo}_fecha_nacimiento[]" value="${data[`${tipo}_fecha_nacimiento[]`] || ''}" required></label></div>
             </div>
             <div class="form-row">
-                <div class="form-group"><label>País: <select name="${tipo}_pais[]" required></select></label></div>
+                <div class="form-group"><label>País: <select name="${tipo}_pais[]" required>${getPaisesOptions(data[`${tipo}_pais[]`])}</select></label></div>
                 <div class="form-group"><label>Género: 
                     <select name="${tipo}_genero[]" required>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino" ${data[`${tipo}_genero[]`] === 'Masculino' ? 'selected' : ''}>Masculino</option>
+                        <option value="Femenino" ${data[`${tipo}_genero[]`] === 'Femenino' ? 'selected' : ''}>Femenino</option>
                     </select>
                 </label></div>
                 <div class="form-group"><label>Alimentación: 
                     <select name="${tipo}_alimentacion[]" required>
-                        <option value="Normal">Normal</option>
-                        <option value="Vegano">Vegano</option>
+                        <option value="Normal" ${data[`${tipo}_alimentacion[]`] === 'Normal' ? 'selected' : ''}>Normal</option>
+                        <option value="Vegano" ${data[`${tipo}_alimentacion[]`] === 'Vegano' ? 'selected' : ''}>Vegano</option>
                     </select>
                 </label></div>
-                <div class="form-group"><label>Número de Vuelo: <input type="text" name="${tipo}_numero_vuelo[]" required></label></div>
-                <div class="form-group"><label>Fecha y Hora de Llegada: <input type="datetime-local" name="${tipo}_fecha_hora_llegada[]" required></label></div>
-                <div class="form-group"><label>Fecha y Hora de Salida: <input type="datetime-local" name="${tipo}_fecha_hora_salida[]" required></label></div>
+                <div class="form-group"><label>Número de Vuelo: <input type="text" name="${tipo}_numero_vuelo[]" value="${data[`${tipo}_numero_vuelo[]`] || ''}" required></label></div>
+                <div class="form-group"><label>Fecha y Hora de Llegada: <input type="datetime-local" name="${tipo}_fecha_hora_llegada[]" value="${data[`${tipo}_fecha_hora_llegada[]`] || ''}" required></label></div>
+                <div class="form-group"><label>Fecha y Hora de Salida: <input type="datetime-local" name="${tipo}_fecha_hora_salida[]" value="${data[`${tipo}_fecha_hora_salida[]`] || ''}" required></label></div>
             </div>
             <div class="form-row">
-                <div class="form-group"><label>Información adicional: <textarea name="${tipo}_informacion_adicional[]"></textarea></label></div>
+                <div class="form-group"><label>Información adicional: <textarea name="${tipo}_informacion_adicional[]">${data[`${tipo}_informacion_adicional[]`] || ''}</textarea></label></div>
             
                 <!-- 🔹 Experiencias Adicionales (Checkbox) -->
                 <div class="adicionales-container">
@@ -582,7 +641,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div id="experiencias_adicionales_${index}" class="experiencias-adicionales">
                         ${listaExperienciasAd.map(exp => `
                             <label class="check_pas">
-                                <input type="checkbox" name="pasajero[${index}][experiencias_adicionales][]" value="${exp.id_experiencia_adicional}">
+                                <input type="checkbox" name="pasajero[${index}][experiencias_adicionales][]" value="${exp.id_experiencia_adicional}" ${data[`pasajero[${index}][experiencias_adicionales][]`] && data[`pasajero[${index}][experiencias_adicionales][]`].includes(exp.id_experiencia_adicional) ? 'checked' : ''}>
                                 ${exp.nombre_experiencia} - $${exp.precio}
                             </label>
                         `).join("")}
@@ -595,7 +654,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div id="costos_adicionales_${index}" class="costos-adicionales">
                         ${listaCostosAd.map(costo => `
                             <label>
-                                <input type="checkbox" name="pasajero[${index}][costos_adicionales][]" value="${costo.id_adicional_otros}">
+                                <input type="checkbox" name="pasajero[${index}][costos_adicionales][]" value="${costo.id_adicional_otros}" ${data[`pasajero[${index}][costos_adicionales][]`] && data[`pasajero[${index}][costos_adicionales][]`].includes(costo.id_adicional_otros) ? 'checked' : ''}>
                                 ${costo.nombre_adicional} - $${costo.precio}
                             </label>
                         `).join("")}
@@ -604,18 +663,56 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="otro-adicional">
                     <h4>Otro Adicional</h4>
-                    <div class="form-group"><label>Nombre: <input type="text" name="${tipo}_otro_nombre[]"></label></div>
-                    <div class="form-group"><label>Precio: <input type="number" name="${tipo}_otro_precio[]"></label></div>
+                    <div class="form-group"><label>Nombre: <input type="text" name="${tipo}_otro_nombre[]" value="${data[`${tipo}_otro_nombre[]`] || ''}"></label></div>
+                    <div class="form-group"><label>Precio: <input type="number" name="${tipo}_otro_precio[]" value="${data[`${tipo}_otro_precio[]`] || ''}"></label></div>
                 </div>
             </div>
             </div>
         `;
     }
 
+    // Función para obtener las opciones de países
+    function getPaisesOptions(selectedPais) {
+        return listaPaises.map(pais => `<option value="${pais.id_pais}" ${selectedPais === pais.id_pais ? 'selected' : ''}>${pais.nombre_pais}</option>`).join("");
+    }
 
-    // Llama a las funciones para cargar experiencias adicionales y costos privados
+    // ✅ Cargar experiencias adicionales desde get_experiencias_ad.php
+    function cargarExperienciasAd() {
+        fetch("api/get_experiencias_ad.php")
+            .then(response => response.json())
+            .then(experiencias => {
+                listaExperienciasAd = experiencias;
+                console.log("✅ Experiencias Adicionales cargadas:", listaExperienciasAd);
+            })
+            .catch(error => console.error("❌ Error al obtener experiencias adicionales:", error));
+    }
+
+    // ✅ Cargar costos adicionales desde get_costos_ad.php
+    function cargarCostosAd() {
+        fetch("api/get_costos_ad.php")
+            .then(response => response.json())
+            .then(costos => {
+                listaCostosAd = costos;
+                console.log("✅ Costos Adicionales cargados:", listaCostosAd);
+            })
+            .catch(error => console.error("❌ Error al obtener costos adicionales:", error));
+    }
+
+    // ✅ Cargar países desde get_paises.php
+    function cargarPaises() {
+        fetch("api/get_paises.php")
+            .then(response => response.json())
+            .then(paises => {
+                listaPaises = paises;
+                console.log("✅ Países cargados:", listaPaises);
+            })
+            .catch(error => console.error("❌ Error al obtener países:", error));
+    }
+
+    // Llama a las funciones para cargar experiencias adicionales, costos privados y países
     cargarExperienciasAd();
     cargarCostosAd();
+    cargarPaises();
 
     // Escuchar clics en los botones para abrir el modal
     document.addEventListener('click', function(event) {
@@ -624,6 +721,22 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = "block";
             cargarFormularioPasajeros(habitacionId);
         }
+    });
+
+    // Guardar los datos de los pasajeros al hacer clic en "Guardar" en el modal
+    document.getElementById('btnGuardarPasajeros').addEventListener('click', function() {
+        const habitacionId = document.querySelector('.habitacion-row[data-id]').getAttribute('data-id');
+        const formData = new FormData(document.getElementById('formPasajeros'));
+        const pasajeros = {};
+        formData.forEach((value, key) => {
+            if (!pasajeros[key]) {
+                pasajeros[key] = [];
+            }
+            pasajeros[key].push(value);
+        });
+        pasajerosData[habitacionId] = pasajeros;
+        console.log('Datos de los pasajeros guardados:', pasajerosData); // Console log para verificar los datos
+        modal.style.display = "none";
     });
 
     // Cerrar el modal
@@ -638,4 +751,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// fin modal agregar pasajeros
+//FIN MODAL PASAJEROS
