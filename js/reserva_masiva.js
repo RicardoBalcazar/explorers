@@ -468,6 +468,8 @@ function cargarHabitacionesDisponibles() {
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
+                        <button type="button" class="btn-abrir-modal" data-id="${index + 1}">Agregar Pasajeros</button>
+                        
                     `;
 
                     const checkbox = fila.querySelector('.habitacion-checkbox');
@@ -487,3 +489,153 @@ function cargarHabitacionesDisponibles() {
     });
 }
 //FIN OBTENER RESERVAS Y PINTARLAS EN LAS HABITACIONES
+
+//modal agregar pasajeros
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById("modalPasajeros");
+    const span = document.getElementsByClassName("close")[0];
+    const pasajerosContainer = document.getElementById("pasajerosContainer");
+
+    // Función para cargar el formulario de pasajeros
+    function cargarFormularioPasajeros(habitacionId) {
+        pasajerosContainer.innerHTML = ''; // Limpiar el contenedor
+
+        // Obtener los valores seleccionados
+        const fila = document.querySelector(`.habitacion-row[data-id="${habitacionId}"]`);
+        const adultos = fila.querySelector('.adultos').value;
+        const ninos = fila.querySelector('.ninos').value;
+        const infantes = fila.querySelector('.infantes').value;
+        const tc = fila.querySelector('.tc').value;
+
+        // Crear formularios dinámicamente
+        for (let i = 0; i < adultos; i++) {
+            pasajerosContainer.innerHTML += crearFormularioPasajero('adulto', i + 1);
+        }
+        for (let i = 0; i < ninos; i++) {
+            pasajerosContainer.innerHTML += crearFormularioPasajero('niño', i + 1);
+        }
+        for (let i = 0; i < infantes; i++) {
+            pasajerosContainer.innerHTML += crearFormularioPasajero('infante', i + 1);
+        }
+        for (let i = 0; i < tc; i++) {
+            pasajerosContainer.innerHTML += crearFormularioPasajero('tc', i + 1);
+        }
+    }
+
+        // ✅ Cargar experiencias adicionales desde get_experiencias_ad.php
+        function cargarExperienciasAd() {
+            fetch("api/get_experiencias_ad.php")
+                .then(response => response.json())
+                .then(experiencias => {
+                    listaExperienciasAd = experiencias;
+                    console.log("✅ Experiencias Adicionales cargadas:", listaExperienciasAd);
+                })
+                .catch(error => console.error("❌ Error al obtener experiencias adicionales:", error));
+        }
+    
+        // ✅ Cargar costos adicionales desde get_costos_ad.php
+        function cargarCostosAd() {
+            fetch("api/get_costos_ad.php")
+                .then(response => response.json())
+                .then(costos => {
+                    listaCostosAd = costos;
+                    console.log("✅ Costos Adicionales cargados:", listaCostosAd);
+                })
+                .catch(error => console.error("❌ Error al obtener costos adicionales:", error));
+        }
+
+    // Función para crear el formulario de pasajeros
+    function crearFormularioPasajero(tipo, index) {
+        return `
+            <div class="pasajero-form">
+                <h3>${tipo.charAt(0).toUpperCase() + tipo.slice(1)} ${index}</h3>
+                <div class="form-row">
+                <div class="form-group"><label>Nombres: <input type="text" name="${tipo}_nombres[]" required></label></div>
+                <div class="form-group"><label>Apellidos: <input type="text" name="${tipo}_apellidos[]" required></label></div>
+                <div class="form-group"><label>Pasaporte: <input type="text" name="${tipo}_pasaporte[]" required></label></div>
+                <div class="form-group"><label>Fecha de Nacimiento: <input type="date" name="${tipo}_fecha_nacimiento[]" required></label></div>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>País: <select name="${tipo}_pais[]" required></select></label></div>
+                <div class="form-group"><label>Género: 
+                    <select name="${tipo}_genero[]" required>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </label></div>
+                <div class="form-group"><label>Alimentación: 
+                    <select name="${tipo}_alimentacion[]" required>
+                        <option value="Normal">Normal</option>
+                        <option value="Vegano">Vegano</option>
+                    </select>
+                </label></div>
+                <div class="form-group"><label>Número de Vuelo: <input type="text" name="${tipo}_numero_vuelo[]" required></label></div>
+                <div class="form-group"><label>Fecha y Hora de Llegada: <input type="datetime-local" name="${tipo}_fecha_hora_llegada[]" required></label></div>
+                <div class="form-group"><label>Fecha y Hora de Salida: <input type="datetime-local" name="${tipo}_fecha_hora_salida[]" required></label></div>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>Información adicional: <textarea name="${tipo}_informacion_adicional[]"></textarea></label></div>
+            
+                <!-- 🔹 Experiencias Adicionales (Checkbox) -->
+                <div class="adicionales-container">
+                    <label><strong>Experiencias Adicionales:</strong></label>
+                    <div id="experiencias_adicionales_${index}" class="experiencias-adicionales">
+                        ${listaExperienciasAd.map(exp => `
+                            <label class="check_pas">
+                                <input type="checkbox" name="pasajero[${index}][experiencias_adicionales][]" value="${exp.id_experiencia_adicional}">
+                                ${exp.nombre_experiencia} - $${exp.precio}
+                            </label>
+                        `).join("")}
+                    </div>
+                </div>
+
+                <!-- 🔹 Costos Adicionales (Checkbox) -->
+                <div class="adicionales-container">
+                    <label><strong>Costos Adicionales:</strong></label>
+                    <div id="costos_adicionales_${index}" class="costos-adicionales">
+                        ${listaCostosAd.map(costo => `
+                            <label>
+                                <input type="checkbox" name="pasajero[${index}][costos_adicionales][]" value="${costo.id_adicional_otros}">
+                                ${costo.nombre_adicional} - $${costo.precio}
+                            </label>
+                        `).join("")}
+                    </div>
+                </div>
+
+                <div class="otro-adicional">
+                    <h4>Otro Adicional</h4>
+                    <div class="form-group"><label>Nombre: <input type="text" name="${tipo}_otro_nombre[]"></label></div>
+                    <div class="form-group"><label>Precio: <input type="number" name="${tipo}_otro_precio[]"></label></div>
+                </div>
+            </div>
+            </div>
+        `;
+    }
+
+
+    // Llama a las funciones para cargar experiencias adicionales y costos privados
+    cargarExperienciasAd();
+    cargarCostosAd();
+
+    // Escuchar clics en los botones para abrir el modal
+    document.addEventListener('click', function(event) {
+        if (event.target.classList.contains('btn-abrir-modal')) {
+            const habitacionId = event.target.getAttribute('data-id');
+            modal.style.display = "block";
+            cargarFormularioPasajeros(habitacionId);
+        }
+    });
+
+    // Cerrar el modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});
+
+// fin modal agregar pasajeros

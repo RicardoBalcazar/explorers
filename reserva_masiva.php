@@ -98,10 +98,11 @@ $response = ['success' => false, 'message' => ''];
         <span>Habitación</span>
         <span>Tipo</span>
         <span>Variante</span>
-        <span>Adultos</span>
-        <span>Niños</span>
-        <span>Infantes</span>
-        <span>TC (Guía)</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adultos</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Niños</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Infantes</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TC</span>
+        <span>Pasajeros</span>
     </div>
 
     <div id="contenedor-habitaciones">
@@ -110,6 +111,17 @@ $response = ['success' => false, 'message' => ''];
 </div>
     <button type="submit" class="btn-guardar-masiva">Crear Reserva</button>
 </form>
+
+<!-- Modal -->
+<div id="modalPasajeros" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="formPasajeros">
+            <div id="pasajerosContainer"></div>
+            <button type="button" id="btnGuardarPasajeros">Guardar</button>
+        </form>
+    </div>
+</div>
 
 <!-- SweetAlert2 -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
