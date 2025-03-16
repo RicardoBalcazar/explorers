@@ -857,3 +857,56 @@ Array
         )
 
 )
+Datos recibidos:
+Array
+(
+    [codigo_reserva] => EXPLO-00001
+    [estado_reserva] => Reconfirmación
+    [id_cliente] => 15
+    [id_experiencia] => 1
+    [check_in] => 2025-03-13
+    [check_out] => 2025-03-15
+    [id_tarifa] => 
+    [habitaciones] => Array
+        (
+            [0] => 1
+            [1] => 4
+        )
+
+    [tipo_habitacion] => Array
+        (
+            [0] => 1
+            [1] => 1
+        )
+
+    [variante_habitacion] => Array
+        (
+            [0] => 2
+            [1] => 1
+        )
+
+    [adultos] => Array
+        (
+            [0] => 1
+            [1] => 1
+        )
+
+    [ninos] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+    [infantes] => Array
+        (
+            [0] => 0
+            [1] => 0
+        )
+
+    [tc] => Array
+        (
+            [0] => 1
+            [1] => 0
+        )
+
+)

@@ -1,5 +1,6 @@
 <?php
 // Conectar a la base de datos
+require_once 'php/header.php';
 require_once 'php/config.php';
 ?>
 <!DOCTYPE html>
